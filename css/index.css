@@ -1,0 +1,489 @@
+@charset "UTF-8";
+/* importovanje bostrapovog css-a */
+@import url("https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css");
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bullet-ul {
+  list-style: disc;
+}
+
+.ml-n3 {
+  margin-left: -18px;
+}
+
+.buttons {
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-family: "Kalam", cursive;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.button-main {
+  background-color: #B2BB1E;
+  color: #232323;
+}
+.button-main:hover {
+  color: #fff;
+}
+
+.button-second {
+  background-color: #D72151;
+  color: #fff;
+}
+.button-second:hover {
+  color: #D72151;
+  background-color: #fff;
+}
+
+.button-third {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B2BB1E;
+  border-bottom: 3px solid #B2BB1E;
+  transition: all 0.4s ease-in-out;
+}
+.button-third:hover {
+  color: #232323;
+  border-bottom: 3px solid #232323;
+}
+
+/* kontakt forma label i input */
+label {
+  display: block;
+  text-align: start;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #232323;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+/* Container min ovo je za testemonial index strana */
+.container-min {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Zelena boja span */
+.zelena {
+  color: #B2BB1E;
+}
+
+/* Crvena boja span */
+.crveno {
+  color: #D72151;
+  font-family: "Kalam", cursive;
+}
+
+button {
+  border: none;
+}
+
+h1, h2, h3 {
+  font-family: "Road Rage", cursive;
+}
+
+h1 {
+  font-size: 74px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+.margin8px {
+  margin-top: 8px !important;
+}
+
+.blackGreen {
+  color: #155724;
+}
+
+.alertGreen {
+  background-color: #d4edda !important;
+}
+
+nav .bg-trans {
+  background-color: transparent;
+}
+nav .logo {
+  width: 150px;
+}
+nav .ham-menu {
+  /* Hamburger meni */
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+nav .ham-menu span {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 3px;
+  border-radius: 7px;
+}
+nav .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+}
+nav .nav-item {
+  margin: 0 5px;
+  /* ligth and dark theme */
+}
+nav .nav-item .nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: "Kalam", cursive;
+  position: relative;
+}
+nav .nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #B2BB1E;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s ease-in-out;
+}
+nav .nav-item .nav-link.active::after {
+  width: 100%; /* set width to 100% for active state */
+}
+nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+nav .nav-item .label {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background-color: rgba(255, 187, 11, 0.5);
+  border-radius: 20px;
+  position: relative;
+}
+nav .nav-item .label-span {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s ease-in-out;
+}
+nav .nav-item .label-span-img {
+  width: 100%;
+  height: 100%;
+}
+nav .nav-item .label input:checked ~ .label-span {
+  left: calc(100% - 30px);
+}
+
+/* Footer */
+.footer {
+  background: url(../img/indexImg/bgFooter.webp) center center/cover;
+  color: #fff;
+  /* Mobilni uređaj skidanje negativne margine */
+}
+.footer-ul-naslov {
+  display: inline-block;
+  font-family: "Kalam", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+.footer-ul-naslov::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.footer-ul-li {
+  font-size: 18px;
+}
+.footer-ul-li-a {
+  color: #fff;
+}
+.footer-ul-li-a:hover {
+  color: #FFBB0B;
+}
+.footer-ul-li-img {
+  width: 20px;
+}
+.footer-ul-li-img:hover {
+  background-color: rgba(28, 28, 28, 0.431372549);
+}
+.footer-logo {
+  width: 200px;
+}
+.footer-icons-img {
+  width: 30px;
+}
+.footer-parent {
+  margin-bottom: 10px;
+}
+.footer-parent-img {
+  width: 100px;
+  height: auto;
+  border: 1px solid #232323;
+  border-radius: 7px;
+}
+@media (max-width: 575px) {
+  .footer .ml-n3 {
+    margin-left: -35px;
+  }
+}
+
+/* importovanje fontova */
+@font-face {
+  font-family: "Kalam";
+  src: url("../fonts/Kalam/Kalam-Light.ttf") format("truetype"), url("../fonts/Kalam/Kalam-Bold.ttf") format("truetype"), url("../fonts/Kalam/Kalam-Regular.ttf") format("truetype");
+  /* Dodatne varijante fonta */
+  font-weight: 300;
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: "Road rage";
+  src: url("../fonts/Road_Rage/RoadRage-Regular.ttf") format("truetype");
+  /* Dodatne varijante fonta */
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+body {
+  overflow-x: hidden;
+  background-color: #fff;
+}
+
+img {
+  width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  background: url(../img/indexImg/bgHero.webp) center center/cover;
+}
+
+/* HERO SEKCIJA */
+.hero-text {
+  color: #fff;
+  margin: auto 0;
+  text-align: center;
+  font-size: 18px;
+  font-display: swap;
+}
+@media (max-width: 576px) {
+  .hero .img-papagaj {
+    max-width: 350px;
+  }
+}
+
+/* ZASTO DA NAS POSETITE SEKCIJA */
+.explore {
+  /* Promena redosleda slika kad se ekran smanji */
+}
+.explore h2 {
+  text-align: center;
+  position: relative;
+}
+.explore h2::after {
+  content: "";
+  background-color: #D72151;
+  width: 100px;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+@media (max-width: 767px) {
+  .explore .order2 {
+    order: 2;
+  }
+}
+
+/* Card section */
+.cardZoo {
+  background: url(../img/indexImg/jungle-bg.webp) center center/cover;
+  color: #fff;
+  min-height: 100vh;
+  text-align: center;
+}
+.cardZoo-basic {
+  text-align: center;
+  border: 2px dashed #fff;
+  background: rgba(0, 0, 0, 0.5);
+  padding: 30px 0px;
+  width: 300px;
+}
+.cardZoo-basic:nth-child(4) {
+  position: relative;
+  overflow: hidden;
+}
+.cardZoo-basic:nth-child(4)::after {
+  content: "Najisplativije";
+  position: absolute;
+  top: 10%;
+  left: 55%;
+  background-color: #D72151;
+  color: #fff;
+  font-weight: bold;
+  padding: 3px 30px;
+  text-transform: uppercase;
+  transform: rotate(50deg);
+}
+.cardZoo-basic h3 {
+  font-size: 50px;
+}
+.cardZoo-basic li {
+  border-bottom: 1px solid #706d6d;
+}
+.cardZoo-basic-prize {
+  margin: 0;
+  display: inline-block;
+  color: #B2BB1E;
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+}
+.cardZoo-basic-prize-dinar {
+  position: absolute;
+  bottom: 10%;
+  left: 100%;
+  font-size: 15px;
+}
+
+/* Blog */
+.blog {
+  padding-top: 80px;
+}
+.blog .card {
+  position: relative;
+  margin-bottom: 70px;
+}
+.blog .card-date {
+  border-radius: 7px;
+  position: absolute;
+  top: -10%;
+  left: 80%;
+  background-color: #B2BB1E;
+  padding: 5px 10px;
+}
+.blog .card-date-day {
+  font-size: 36px;
+  font-weight: bold;
+  color: #232323;
+  margin: 0;
+}
+.blog .card-date-month {
+  margin: 0;
+  color: #706d6d;
+}
+.blog .card-link {
+  color: #B2BB1E;
+  font-size: 18px;
+}
+
+/* Reptil */
+.reptil {
+  background: url(../img/indexImg/iguana.webp) center center/cover;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 30vh;
+}
+.reptil-circle {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(28, 28, 28, 0.431372549);
+  border-radius: 50%;
+  position: relative;
+  display: grid;
+  place-items: center;
+  animation: pulsAnimate 2s linear infinite;
+}
+.reptil-circle-img {
+  width: auto;
+  height: auto;
+}
+@media (max-width: 767px) {
+  .reptil-padding {
+    padding-bottom: 30px;
+  }
+}
+@keyframes pulsAnimate {
+  0% {
+    box-shadow: 0 0 0 0 rgba(178, 187, 30, 0.3), 0 0 0 8px rgba(178, 187, 30, 0.3);
+  }
+  100% {
+    box-shadow: 0 0 0 0 rgba(178, 187, 30, 0.3), 0 0 0 0px rgba(178, 187, 30, 0.3);
+  }
+}
+
+/* karosel Zivotinje */
+.caroselZoo-utisak {
+  font-size: 28px;
+  margin: 0;
+}
+.caroselZoo-slide {
+  background-color: #B2BB1E;
+  border-radius: 7px;
+  color: #fff;
+  position: relative;
+  min-height: 300px;
+  padding: 80px 70px 0 70px;
+}
+.caroselZoo-slide-img {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  top: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 5px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+.caroselZoo-slide-img img {
+  width: 100%;
+  border-radius: 50%;
+}
+.caroselZoo-slide-name {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  margin: 0;
+  margin-top: 30px;
+  padding-bottom: 10px;
+}/*# sourceMappingURL=index.css.map */

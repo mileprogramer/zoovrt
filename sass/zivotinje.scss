@@ -1,0 +1,63 @@
+@import "varijable";
+@import "stilovi";
+@import "nav";
+@import "footer";
+
+.wrapper{
+    background: url(../img/zooHero.jpg) center center /cover;
+    
+}
+.hero{
+    min-height: 60vh;
+    text-align: center;
+    color: $white;
+    &-p{
+        font-size: 18px;
+    }
+}
+.animals{
+    /* Postavljanje background image */
+    .slon{
+        background: url(../img/azijskiSlon.jpg) center center /cover;
+    }
+    .lav{
+        background: url(../img/lavZivotinje.jpg) center center /cover;
+    }
+    .jelen{
+        background: url(../img/deerZivotinje.jpg) center center /cover;
+    }
+    .tigar{
+        background: url(../img/tiger.jpg) center center /cover;
+    }
+    color: $white;
+    .content{
+        max-width: 800px;
+    }
+    &-animal{
+        min-height: 80vh;
+        &-h2{
+            display: inline-block;
+            margin-left: 20px;
+        }
+        &-p{
+            font-size: 18px;
+        }
+        &-div{
+            transform: translateY(10%);
+            display: inline-block;
+            width: 60px;
+            height: 60px;
+            background-color: $yellow;
+            border-radius: 50%;
+            position: relative;
+            &-img{
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%,-50%);
+                width: 40px;
+                height: 40px;
+            }
+        }
+    }
+}

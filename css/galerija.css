@@ -1,0 +1,352 @@
+@charset "UTF-8";
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bullet-ul {
+  list-style: disc;
+}
+
+.ml-n3 {
+  margin-left: -18px;
+}
+
+.buttons {
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-family: "Kalam", cursive;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.button-main {
+  background-color: #B2BB1E;
+  color: #232323;
+}
+.button-main:hover {
+  color: #fff;
+}
+
+.button-second {
+  background-color: #D72151;
+  color: #fff;
+}
+.button-second:hover {
+  color: #D72151;
+  background-color: #fff;
+}
+
+.button-third {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B2BB1E;
+  border-bottom: 3px solid #B2BB1E;
+  transition: all 0.4s ease-in-out;
+}
+.button-third:hover {
+  color: #232323;
+  border-bottom: 3px solid #232323;
+}
+
+/* kontakt forma label i input */
+label {
+  display: block;
+  text-align: start;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #232323;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+/* Container min ovo je za testemonial index strana */
+.container-min {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Zelena boja span */
+.zelena {
+  color: #B2BB1E;
+}
+
+/* Crvena boja span */
+.crveno {
+  color: #D72151;
+  font-family: "Kalam", cursive;
+}
+
+button {
+  border: none;
+}
+
+h1, h2, h3 {
+  font-family: "Road Rage", cursive;
+}
+
+h1 {
+  font-size: 74px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+.margin8px {
+  margin-top: 8px !important;
+}
+
+.blackGreen {
+  color: #155724;
+}
+
+.alertGreen {
+  background-color: #d4edda !important;
+}
+
+nav .bg-trans {
+  background-color: transparent;
+}
+nav .logo {
+  width: 150px;
+}
+nav .ham-menu {
+  /* Hamburger meni */
+  width: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  justify-content: center;
+  align-items: center;
+}
+nav .ham-menu span {
+  content: "";
+  background-color: #fff;
+  width: 100%;
+  height: 3px;
+  border-radius: 7px;
+}
+nav .navbar-toggler:focus {
+  text-decoration: none;
+  outline: 0;
+  box-shadow: none;
+  border: none;
+}
+nav .nav-item {
+  margin: 0 5px;
+  /* ligth and dark theme */
+}
+nav .nav-item .nav-link {
+  color: #fff !important;
+  text-transform: uppercase;
+  font-family: "Kalam", cursive;
+  position: relative;
+}
+nav .nav-item .nav-link::after {
+  content: "";
+  width: 0%;
+  height: 2px;
+  background-color: #B2BB1E;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: 0.4s ease-in-out;
+}
+nav .nav-item .nav-link.active::after {
+  width: 100%; /* set width to 100% for active state */
+}
+nav .nav-item .nav-link:hover::after {
+  width: 100%;
+}
+nav .nav-item .label {
+  display: inline-block;
+  width: 90px;
+  height: 30px;
+  background-color: rgba(255, 187, 11, 0.5);
+  border-radius: 20px;
+  position: relative;
+}
+nav .nav-item .label-span {
+  position: absolute;
+  top: 50%;
+  left: -5%;
+  transform: translateY(-50%);
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  transition: 0.4s ease-in-out;
+}
+nav .nav-item .label-span-img {
+  width: 100%;
+  height: 100%;
+}
+nav .nav-item .label input:checked ~ .label-span {
+  left: calc(100% - 30px);
+}
+
+/* Footer */
+.footer {
+  background: url(../img/indexImg/bgFooter.webp) center center/cover;
+  color: #fff;
+  /* Mobilni uređaj skidanje negativne margine */
+}
+.footer-ul-naslov {
+  display: inline-block;
+  font-family: "Kalam", cursive;
+  font-size: 28px;
+  font-weight: bold;
+  position: relative;
+}
+.footer-ul-naslov::after {
+  content: "";
+  width: 100%;
+  height: 3px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background-color: #fff;
+}
+.footer-ul-li {
+  font-size: 18px;
+}
+.footer-ul-li-a {
+  color: #fff;
+}
+.footer-ul-li-a:hover {
+  color: #FFBB0B;
+}
+.footer-ul-li-img {
+  width: 20px;
+}
+.footer-ul-li-img:hover {
+  background-color: rgba(28, 28, 28, 0.431372549);
+}
+.footer-logo {
+  width: 200px;
+}
+.footer-icons-img {
+  width: 30px;
+}
+.footer-parent {
+  margin-bottom: 10px;
+}
+.footer-parent-img {
+  width: 100px;
+  height: auto;
+  border: 1px solid #232323;
+  border-radius: 7px;
+}
+@media (max-width: 575px) {
+  .footer .ml-n3 {
+    margin-left: -35px;
+  }
+}
+
+body {
+  overflow-x: hidden;
+}
+
+.wrapper {
+  background: url(../img/galerijaHero.jpg) center center/cover;
+}
+
+.hero {
+  min-height: 60vh;
+  color: #fff;
+}
+.hero p {
+  font-size: 27px;
+  font-weight: bold;
+}
+
+.slikanje-p {
+  font-size: 28px;
+}
+.slikanje-h2 {
+  position: relative;
+}
+.slikanje-h2::after {
+  content: "";
+  position: absolute;
+  bottom: -3%;
+  left: 0%;
+  width: 100px;
+  height: 4px;
+  background-color: #B2BB1E;
+}
+.slikanje-card {
+  position: relative;
+  min-height: 100%;
+  box-shadow: 0 0 8px rgba(122, 122, 122, 0.5);
+  border-radius: 7px;
+  padding: 8px;
+}
+.slikanje-card-img {
+  width: 100%;
+  height: 400px;
+}
+.slikanje-card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.slikanje-icon-div {
+  position: absolute;
+  top: -2%;
+  left: -5%;
+  background-color: #FFBB0B;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  color: white;
+}
+.slikanje-icon-div .fa-photo-video {
+  transform: rotate(-15deg);
+  font-size: 50px;
+}
+.slikanje-tekst {
+  padding-left: 20px;
+}
+
+.galerija {
+  min-height: 100vh;
+  background: url(../img/woodenTable.jpg) center center/cover;
+}
+.galerija-h2 {
+  position: relative;
+  color: #fff;
+}
+.galerija-h2::after {
+  content: "";
+  position: absolute;
+  bottom: -3%;
+  left: 0%;
+  width: 100%;
+  height: 2px;
+  background-color: #B2BB1E;
+}
+.galerija-slika {
+  width: 100%;
+  height: 100%;
+}/*# sourceMappingURL=galerija.css.map */

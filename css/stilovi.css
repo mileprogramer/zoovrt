@@ -1,0 +1,124 @@
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+.bullet-ul {
+  list-style: disc;
+}
+
+.ml-n3 {
+  margin-left: -18px;
+}
+
+.buttons {
+  gap: 10px;
+  justify-content: center;
+}
+
+.button {
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-family: "Kalam", cursive;
+  font-size: 18px;
+  display: inline-block;
+}
+
+.button-main {
+  background-color: #B2BB1E;
+  color: #232323;
+}
+.button-main:hover {
+  color: #fff;
+}
+
+.button-second {
+  background-color: #D72151;
+  color: #fff;
+}
+.button-second:hover {
+  color: #D72151;
+  background-color: #fff;
+}
+
+.button-third {
+  font-family: "Kalam", cursive;
+  font-size: 20px;
+  font-weight: bold;
+  color: #B2BB1E;
+  border-bottom: 3px solid #B2BB1E;
+  transition: all 0.4s ease-in-out;
+}
+.button-third:hover {
+  color: #232323;
+  border-bottom: 3px solid #232323;
+}
+
+/* kontakt forma label i input */
+label {
+  display: block;
+  text-align: start;
+}
+
+input {
+  width: 100%;
+  height: 48px;
+  border: 1px solid #232323;
+  border-radius: 7px;
+  padding-left: 10px;
+}
+input:focus {
+  outline: none;
+}
+
+/* Container min ovo je za testemonial index strana */
+.container-min {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Zelena boja span */
+.zelena {
+  color: #B2BB1E;
+}
+
+/* Crvena boja span */
+.crveno {
+  color: #D72151;
+  font-family: "Kalam", cursive;
+}
+
+button {
+  border: none;
+}
+
+h1, h2, h3 {
+  font-family: "Road Rage", cursive;
+}
+
+h1 {
+  font-size: 74px;
+}
+
+h2 {
+  font-size: 64px;
+}
+
+h3 {
+  font-size: 42px;
+}
+
+.margin8px {
+  margin-top: 8px !important;
+}
+
+.blackGreen {
+  color: #155724;
+}
+
+.alertGreen {
+  background-color: #d4edda !important;
+}/*# sourceMappingURL=stilovi.css.map */

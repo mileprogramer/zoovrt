@@ -1,0 +1,39 @@
+@import "varijable";
+@import "stilovi";
+@import "nav";
+@import "footer";
+.wrapper{
+    background: url(../img/blogHero.jpg) center center /cover;
+}
+.hero{
+    min-height: 60vh;
+    color: $white;
+    font-size: 18px;
+}
+.news{
+    & > div > div{
+        @media (max-width: 576px) {
+            padding: 10px;
+        }
+    }
+    img{
+        height: 100%;
+        object-fit: cover;
+    }
+    &-div{
+        border-radius: 7px;
+        border: 1px solid $green;
+        padding: 10px 15px;
+        margin-top: 10px;  
+    }
+    &-time{
+        display: inline-block;
+        background-color: $darkGreen;
+        color: $white;
+        padding: 5px 10px;
+        margin-right: 20px;
+        i{
+            padding-right: 10px;
+        }
+    }
+}

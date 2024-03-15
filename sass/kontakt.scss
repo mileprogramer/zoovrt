@@ -1,0 +1,101 @@
+@import "varijable";
+@import "stilovi";
+@import "nav";
+@import "footer";
+
+
+.wrapper{
+    background: url(../img/jelen.jpg) center center /cover;
+}
+
+.hero{
+    min-height: 60vh;
+    color: $white;
+    text-align: center;
+}
+
+.form{
+    background: url(../img/woodenTable.jpg) center center /cover;
+    color: $white;
+    text-align: center;
+    min-height: 100vh;
+    &-contact{
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        text-align: center;
+        &-info{
+            margin-top: -100px;
+            background-color: $white;
+            color: $black;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            border-radius: 7px;
+            width: 300px;
+            height: 200px;
+            &-icons{
+                color: $darkGreen;
+                font-size: 40px;
+            }
+            &-naslov{
+                font-size: 27px;
+                font-weight: bold;
+            }
+        }
+        @media (max-width: 576px) {
+            &{
+                flex-direction: column;
+                align-items: center;
+                &-info{
+                    margin-top: -40px;
+                    margin-bottom: 50px;
+                }
+            }
+        }
+    }
+    &-h2{
+        position: relative;
+        &::after{
+            content: "";
+            width: 100px;
+            height: 3px;
+            background-color: $green;
+            position: absolute;
+            bottom: -5px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    &-box{
+        background-color: $white;
+        color: $black;
+        @media (max-width: 412px) {
+            padding: 10px 5px !important;
+        }
+        &-right{
+            padding-right: 10px;
+        }
+        &-left{
+            padding-left: 10px;
+        }
+        textarea{
+            width: 100%;
+            border: 1px solid $black;
+            border-radius: 7px;
+            padding-left: 10px;
+            &:focus{
+                outline: none;
+            }
+        }
+        &-okvir{
+            border: 1px solid $darkGreen;
+            padding: 10px 20px;
+            border-radius: 7px;
+            P{
+                color: $darkGreen;
+            }
+        }
+    }
+}

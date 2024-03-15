@@ -1,0 +1,24 @@
+.buttons {
+  gap: 10px;
+  justify-content: center;
+}
+.buttons .button {
+  text-decoration: none;
+  padding: 10px 25px;
+  border-radius: 7px;
+  font-family: "Kalam", cursive;
+  font-size: 18px;
+}
+.buttons .button-main {
+  background-color: #B2BB1E;
+  color: #232323;
+}
+.buttons .button-second {
+  background-color: #D72151;
+  color: #fff;
+}
+
+/* Zelena boja span */
+.zelena {
+  color: #B2BB1E;
+}/*# sourceMappingURL=komponente.css.map */
